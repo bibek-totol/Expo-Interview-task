@@ -8,10 +8,10 @@ export default function Form() {
 
   const handleSubmit = () => {
     if (form.name && form.email && form.phone) {
-      Alert.alert("✅ Success", "Your information has been saved locally.");
+      Alert.alert("Your form has been submitted", `Name: ${form.name}\nEmail: ${form.email}\nPhone: ${form.phone}`);
       setForm({ name: "", email: "", phone: "" }); 
     } else {
-      Alert.alert("⚠️ Missing Fields", "Please fill out all fields.");
+      Alert.alert(" Missing Fields", "Please fill out all fields.");
     }
   };
 
@@ -56,6 +56,9 @@ export default function Form() {
           Submit
         </Text>
       </TouchableOpacity>
+
+      
+      
     </View>
   );
 }

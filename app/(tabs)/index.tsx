@@ -23,7 +23,7 @@ export default function HomeScreen() {
       </View>
 
     
-      <View className="mt-10 space-y-6">
+      <View className="mt-10 space-y-6 pb-10">
         {["Private Concierge", "Elite Access", "Tailored Rewards"].map((feature, idx) => (
           <View
             key={idx}
